@@ -10,20 +10,11 @@ const routes = [
   {
     path: '/about',
     name: 'about',
-    // Lazy-loaded when visited
     component: () => import('@/views/AboutView.vue'),
   },
-  // Future route examples for Tooling Hero
-  // {
-  //   path: '/dang',
-  //   name: 'DANG',
-  //   component: () => import('@/views/DangView.vue'),
-  // },
-  // {
-  //   path: '/contact',
-  //   name: 'Contact',
-  //   component: () => import('@/views/ContactView.vue'),
-  // },
+  // Future routes
+  // { path: '/dang', name: 'DANG', component: () => import('@/views/DangView.vue') },
+  // { path: '/contact', name: 'Contact', component: () => import('@/views/ContactView.vue') },
 ]
 
 const router = createRouter({
