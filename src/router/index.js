@@ -12,8 +12,12 @@ const routes = [
     name: 'about',
     component: () => import('@/views/AboutView.vue'),
   },
+  {
+    path: '/dang',
+    name: 'dang',
+    component: () => import('@/views/DangView.vue'),
+  },
   // Future routes
-  // { path: '/dang', name: 'DANG', component: () => import('@/views/DangView.vue') },
   // { path: '/contact', name: 'Contact', component: () => import('@/views/ContactView.vue') },
 ]
 

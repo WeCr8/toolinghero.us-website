@@ -5,9 +5,7 @@
       <nav class="nav-links">
         <RouterLink to="/" exact-active-class="active">Home</RouterLink>
         <RouterLink to="/about" exact-active-class="active">About</RouterLink>
-        <!-- Future links -->
-        <!-- <RouterLink to="/dang">DANG</RouterLink> -->
-        <!-- <RouterLink to="/contact">Contact</RouterLink> -->
+        <RouterLink to="/dang" exact-active-class="active">DANG</RouterLink>
       </nav>
     </div>
   </header>
@@ -53,7 +51,7 @@ import { RouterLink } from 'vue-router'
 }
 
 .nav-links a:hover {
-  color: #93c5fd; /* Light blue hover */
+  color: #93c5fd;
 }
 
 .active {
