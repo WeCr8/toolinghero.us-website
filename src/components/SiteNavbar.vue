@@ -1,60 +1,49 @@
 <template>
-  <header class="navbar">
-    <div class="container">
-      <RouterLink to="/" class="logo">Tooling Hero</RouterLink>
-      <nav class="nav-links">
-        <RouterLink to="/" exact-active-class="active">Home</RouterLink>
-        <RouterLink to="/about" exact-active-class="active">About</RouterLink>
-        <RouterLink to="/dang" exact-active-class="active">DANG</RouterLink>
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="container flex justify-between items-center py-4">
+      <!-- Logo -->
+      <RouterLink to="/" class="flex items-center">
+        <img :src="logo" alt="Tooling Hero Logo" class="h-10 w-auto" />
+      </RouterLink>
+
+      <!-- Navigation Links -->
+      <nav class="flex items-center gap-6">
+        <RouterLink to="/" exact-active-class="active-link" class="nav-link"
+          >Home</RouterLink
+        >
+        <RouterLink
+          to="/about"
+          exact-active-class="active-link"
+          class="nav-link"
+          >About</RouterLink
+        >
+        <RouterLink to="/dang" exact-active-class="active-link" class="nav-link"
+          >DANG</RouterLink
+        >
       </nav>
     </div>
   </header>
 </template>
 
 <script setup>
-import { RouterLink } from 'vue-router'
+import { RouterLink } from "vue-router";
+import logo from "@/assets/logo.png";
 </script>
 
 <style scoped>
-.navbar {
-  background-color: #1e3a8a; /* Deep blue */
-  color: white;
-  padding: 1rem 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  position: sticky;
-  top: 0;
-  z-index: 50;
-}
-
-.container {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 1.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  font-size: 1.25rem;
-  font-weight: bold;
-  color: white;
-  text-decoration: none;
-}
-
-.nav-links a {
-  margin-left: 1.25rem;
-  color: white;
-  text-decoration: none;
+.nav-link {
+  color: #1f2937; /* Gray-800 */
   font-weight: 500;
-  transition: color 0.2s;
+  text-decoration: none;
+  transition: color 0.2s ease;
 }
 
-.nav-links a:hover {
-  color: #93c5fd;
+.nav-link:hover {
+  color: #2563eb; /* Blue-600 */
 }
 
-.active {
-  border-bottom: 2px solid #fff;
+.active-link {
+  border-bottom: 2px solid #2563eb;
+  color: #2563eb;
 }
 </style>

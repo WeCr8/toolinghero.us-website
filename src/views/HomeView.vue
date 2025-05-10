@@ -1,33 +1,55 @@
 <template>
-  <section class="max-w-4xl mx-auto py-12 px-6">
-    <h1 class="text-5xl font-bold text-blue-900 mb-6">Welcome to Tooling Hero</h1>
-
-    <p class="text-lg text-gray-700 leading-relaxed">
-      Your smart tooling companion for modern manufacturing. Tooling Hero helps machinists, programmers,
-      and manufacturers eliminate guesswork by standardizing tool descriptions, IDs, and processes.
-    </p>
-
-    <div class="mt-8 bg-white shadow-md rounded-lg p-6 border border-blue-100">
-      <h2 class="text-2xl font-semibold text-blue-800 mb-4">🔥 Introducing DANG</h2>
-      <p class="text-gray-600">
-        <strong>DANG</strong> — our <em>Description And Naming Generator</em> — lets you build
-        consistent tool IDs and descriptions in seconds. Perfect for Zoller, Mastercam, and ERP integrations.
+  <section class="bg-white pt-24 pb-32">
+    <div class="container text-center fade-in">
+      <!-- Hero Section -->
+      <h1 class="text-5xl font-extrabold text-gray-900 leading-tight mb-6">
+        Welcome to <span class="text-blue-600">Tooling Hero</span>
+      </h1>
+      <p class="text-lg text-gray-600 max-w-xl mx-auto mb-12">
+        Empowering manufacturers with smarter tooling workflows — from shop
+        floor to digital twin.
       </p>
-      <router-link to="/about" class="inline-block mt-6 text-blue-700 hover:underline font-medium">
-        Learn more →
+
+      <router-link to="/dang" class="btn-primary mb-20 inline-block">
+        🚀 Start App
       </router-link>
+
+      <!-- Feature Section: DANG -->
+      <div
+        class="bg-gray-50 border border-blue-100 p-10 rounded-xl shadow-md max-w-3xl mx-auto"
+      >
+        <h2 class="text-3xl font-bold text-blue-800 mb-4">🔥 Meet DANG</h2>
+        <p class="text-gray-700 mb-8 leading-relaxed">
+          <strong>DANG</strong> (Description And Naming Generator) standardizes
+          your tooling language across Zoller, Mastercam, and ERP systems —
+          cutting confusion and boosting productivity.
+        </p>
+
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <router-link to="/dang" class="btn-primary">
+            ⚙️ Launch DANG
+          </router-link>
+          <router-link to="/about" class="btn-secondary">
+            📘 Learn More
+          </router-link>
+        </div>
+      </div>
     </div>
   </section>
 </template>
 
 <script setup>
-// No logic required for this view
+// No logic needed
 </script>
 
 <style scoped>
 @media (max-width: 640px) {
-  section {
-    padding: 2rem 1rem;
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
   }
 }
 </style>
