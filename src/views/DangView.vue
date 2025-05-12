@@ -1,61 +1,85 @@
 <template>
-  <section class="max-w-5xl mx-auto py-12 px-6 space-y-12">
-    <h1 class="text-5xl font-bold text-blue-900">Meet DANG: Description and Naming Generator</h1>
-
-    <!-- Why DANG -->
-    <div class="space-y-4">
-      <h2 class="text-3xl font-semibold text-blue-800">🧠 Why use DANG?</h2>
-      <p class="text-gray-700 text-lg">
-        Naming tools inconsistently across CAM software, presetters, and ERP systems creates confusion,
-        errors, and wasted time. Tool libraries become a mess, programmers can't find what they need,
-        and operators have to guess.
+  <section class="bg-white pt-24 pb-32">
+    <div class="container text-center fade-in">
+      <!-- DANG Hero Section -->
+      <h1 class="text-5xl font-extrabold text-gray-900 leading-tight mb-6">
+        Meet <span class="text-blue-600">DANG</span>
+      </h1>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-12">
+        The <strong>Description And Naming Generator</strong> that brings order
+        to your tooling chaos. Eliminate guesswork, reduce errors, and align
+        teams from shop floor to ERP.
       </p>
-      <p class="text-gray-600">
-        <strong>DANG</strong> eliminates the chaos by generating clean, human-readable, and
-        machine-consistent tool names and descriptions — every single time.
-      </p>
-    </div>
 
-    <!-- How DANG Works -->
-    <div class="space-y-4">
-      <h2 class="text-3xl font-semibold text-blue-800">⚙️ How does DANG work?</h2>
-      <p class="text-gray-700 text-lg">
-        DANG uses structured formulas and dropdown inputs tailored to your tooling environment.
-        Whether you're working in Mastercam, using Zoller TMS, or exporting to an ERP system,
-        DANG builds the name and description using consistent formatting and terminology.
-      </p>
-      <ul class="list-disc list-inside text-gray-600">
-        <li>Choose tool type, diameter, flute count, coating, holder, and more</li>
-        <li>Auto-generates a full ID and description instantly</li>
-        <li>Output formats for Zoller, Mastercam, Excel, or custom needs</li>
-      </ul>
-    </div>
+      <!-- Feature Block -->
+      <div
+        class="bg-gray-50 border border-blue-100 p-10 rounded-xl shadow-md max-w-3xl mx-auto text-left"
+      >
+        <h2 class="text-3xl font-bold text-blue-800 mb-4">⚙️ What DANG Does</h2>
+        <ul class="text-gray-700 leading-relaxed space-y-4 list-disc pl-6">
+          <li>
+            <strong>Standardizes tooling descriptions</strong> across Zoller,
+            Mastercam, and ERP systems
+          </li>
+          <li>
+            <strong>Eliminates human error</strong> with repeatable, structured
+            naming formulas
+          </li>
+          <li>
+            <strong>Reduces setup and programming delays</strong> by making
+            tools easy to identify and verify
+          </li>
+          <li>
+            <strong>Improves communication</strong> across engineering,
+            programming, and shop floor teams
+          </li>
+        </ul>
 
-    <!-- Benefits -->
-    <div class="space-y-4">
-      <h2 class="text-3xl font-semibold text-blue-800">🚀 Benefits</h2>
-      <ul class="list-disc list-inside text-gray-700 text-lg">
-        <li>Standardize tool names across your shop floor</li>
-        <li>Reduce errors in CAM and setup sheets</li>
-        <li>Speed up programming and tool selection</li>
-        <li>Integrate seamlessly with Zoller TMS and presetters</li>
-        <li>Easy to train new programmers and machinists</li>
-      </ul>
-    </div>
+        <p class="mt-8 text-gray-600">
+          Built for real-world shops and scalable to enterprise operations —
+          DANG is your first step toward smarter tooling.
+        </p>
 
-    <!-- CTA -->
-    <div class="mt-10 p-6 bg-blue-50 border border-blue-200 rounded-lg text-center">
-      <h3 class="text-2xl font-bold text-blue-900 mb-2">Ready to bring order to your tool libraries?</h3>
-      <p class="text-gray-700 mb-4">Start using DANG and experience how smart tooling should feel.</p>
-      <router-link to="/contact" class="btn">Request Access to DANG</router-link>
+        <div class="flex flex-col sm:flex-row justify-center gap-4 mt-10">
+          <a
+            href="https://dang.toolinghero.us"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-primary"
+          >
+            🚀 Launch DANG Now
+          </a>
+          <a
+            href="https://github.com/WeCr8"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-secondary"
+          >
+            📁 View Documentation
+          </a>
+        </div>
+      </div>
     </div>
   </section>
 </template>
 
 <script setup>
-// No logic needed for now — static content
+// No logic needed for now
 </script>
 
 <style scoped>
-/* Reuse global btn style if defined in main.css */
+.fade-in {
+  animation: fadeIn 0.8s ease-in-out both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 </style>
